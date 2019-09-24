@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>KIRBY MALL</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/login_style.css" class="css">
+    <link rel="stylesheet" href="css/style.css" class="css">
+    <script src="java/jquery-1.12.3.js"></script>
+    <script src="java/login_script.js"></script>
+<!--header 부분-->
+    <div id="head">
+            <ul class="Left_Bar">
+                <li class="mouse_over">ABOUT US</li>
+                <li class="mouse_over">SHOP</li>
+                <li class="mouse_over">LOOKBOOK</li>
+                <li class="mouse_over">COMMUNITY</li>
+            </ul>
+            <ul class="Right_Bar"> 
+                <li class="mouse_over">MY SHOPPING</li>
+                <li class="mouse_over">ORDER</li>
+                <li class="mouse_over">JOIN</li>
+           </ul>
+        </div>
+</head>
+<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false' p style="cursor:default">
+<!--login,logo 부분-->
+    <div id="ntp-contents">
+        <div id="header"></div>
+        <div class="logo">
+        <a href="index.html" class="link"><img src="img/logo.png"></a>
+    </div><hr>
+<div id="content">
+        <div class="title" aria-live="assertive"></div>
+        <fieldset class="login_form">
+                <legend class="blind">로그인</legend>
+                <div class="id_area">
+                    <div class="input_row" id="id_area">
+                        <span class="input_box">
+                            <input type="text" id="id" name="id" accesskey="L" placeholder="아이디" class="int" maxlength="41" value="">
+                        </span>
+                    </div>
+                </div>
+                <div class="pw_area">
+                    <div class="input_row" id="pw_area">
+                        <span class="input_box">
+                            <input type="password" id="pw" name="pw" placeholder="비밀번호" class="int" maxlength="16" onkeypress="capslockevt(event);getKeysv2();" onkeyup="checkShiftUp(event);" onkeydown="checkShiftDown(event);">
+                        </span>
+                    </div>
+                </div>
+                <input type="submit" title="로그인" alt="로그인" value="로그인" class="btn_global" onclick="nclks('log.login',this,event)">
+            </fieldset>
+            <hr>
+            <ul class="join">
+                <li class="mouse_over">아이디 찾기</li>
+                <li class="mouse_over">비밀번호 찾기</li>
+                <li class="mouse_over">회원가입</li>
+            </ul>
+        </div>
+        </div>
+</body>
+<!--footer 부분-->
+<div id="login_footer1">
+                <ul class="number">
+                    <li><b>010-4454-1922</b></li>
+                    <li>MON - FRI : 10AM-4:30PM</li>
+                    <li>LUNCH : 12:30AM-13:30AM</li>
+                    <li>SAT SUN HOLIDAY OFF</li>
+                    <li>국민은행 / 838901-04-107323 / 정민태</li>
+                </ul>
+            </div>
+            <div id="login_footer2">
+                <ul class="number">
+                        <li>COMPANY : OWNER : 정민태 / CALL : 010-4454-1922</li>
+                        <li>ADDRESS : 02113 서울특별시 중랑구 중랑천로 140 4</li>
+                        <li>BUSUNESS LICENSE : 000-00-00000 [사업자정보확인]</li>
+                </ul>
+            </div>
+            <div id="login_footer3">
+                    <ul class="number">
+                            <li>Copyright. 정민태 all rights reserved. Designed By Mintae></li>
+                    </ul>
+            </div>
+</div>
+</html>
